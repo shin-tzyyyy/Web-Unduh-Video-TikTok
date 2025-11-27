@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengunduh Video TikTok Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unduh Video TikTok 🎶</h1>
+        <div class="input-group">
+            <input type="text" id="tiktok-url" placeholder="Masukkan Tautan Video TikTok di sini..." required>
+            <button onclick="fetchVideoData()">Cari</button>
+        </div>
+        
+        <div id="result-container" class="result-container" style="display: none;">
+            <div class="video-preview">
+                <img id="video-thumbnail" src="" alt="Spanduk Video">
+                <div class="download-overlay">
+                    <button id="download-btn" title="Unduh Video">
+                        <i class="fas fa-download"></i>
+                    </button>
+                </div>
+            </div>
+            <p id="video-title"></p>
+        </div>
+
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
